@@ -1,7 +1,12 @@
 # CMPT 120L 113
 # Andrew Mallach
 # 10 Sep 2018
-### 
+###
+
+
+score = 0
+
+ 
 
 # show game title
 print("\nMarist Mayhem\n"
@@ -34,7 +39,8 @@ print("Oh no! You've really messed up now! "
       "only the first day, and you head off to class.")
 
 # show the current score
-print("Your score is 0.")
+
+print("Your score is " + str(score))
 
 # prompt the user
 input("\n<Press Enter to continue...>\n")
@@ -46,7 +52,8 @@ print("You show up about 10 minutes late. The teacher doesn't seem "
       "of the class time as normal.")
 
 # show the current score
-print("Your score is 5.")
+score+=5
+print("Your score is " + str(score))
 
 # same as above
 input("\n<Press Enter to continue...>\n")
@@ -58,7 +65,8 @@ print("You go back to your dorm feeling guilty about what"
       "with your sleep schedule anymore.")
 
 # same as above
-print("Your score is 10.")
+score+=5
+print("Your score is " + str(score))
 
 # again...
 input("\n<Press Enter to continue...>\n")
@@ -70,7 +78,8 @@ print("Thursday arrives. You have been diligently keeping up"
       "like you can ace it given time.")
 
 # again...
-print("Your score is 15.")
+score+=5
+print("Your score is " + str(score))
 
 # yet again...
 input("\n<Press Enter to continue...>\n")
@@ -85,7 +94,8 @@ print("Monday arrives. You didn't study for a single minute. You spent"
       "available to use. You go to class, ready to cheat.")
 
 # yet again...
-print("Your score is 20.")
+score+=5
+print("Your score is " + str(score))
 
 # one last time...
 input("\n<Press Enter to continue...>\n")
@@ -97,4 +107,7 @@ print("You were caught cheating by your teacher. You didn't even try to hide"
 
 # show credits
 print("\nCopyright (c) 2016-2018 Andrew Mallach, andrew.mallach1@marist")
+
+
+incriment()
 
