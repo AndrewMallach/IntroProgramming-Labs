@@ -6,8 +6,11 @@ def main():
 
     while True:
         guess = input("I am thinking of an animal. What animal am I thinking of?    ")
-        if guess == answer:
+        normGuess = guess.strip().lower()
+        if normGuess == answer:
             print("You win!")
+            break
+        elif normGuess == "quit":
             break
 
         else:
