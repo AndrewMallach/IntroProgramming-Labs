@@ -2,15 +2,20 @@ def main():
 
     print("PYTHON GUESSING GAME")
     
-    answer = "cow"
+    answer = "orangutan"
 
     while True:
         guess = input("I am thinking of an animal. What animal am I thinking of?    ")
         normGuess = guess.strip().lower()
         if normGuess == answer:
-            print("You win!")
-            break
-        elif normGuess == "quit":
+            like = input("Do you like orangutans? Yes or no?   ")
+            normLike = like.strip().lower()
+            if normLike == "yes":
+                print("Great!")
+            elif normLike == "no":
+                print("Aww :(")
+                
+        elif normGuess[0] == "q":
             break
 
         else:
